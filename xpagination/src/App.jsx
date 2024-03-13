@@ -15,7 +15,7 @@ function App() {
     fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json')
       .then((res) => {
         if (!res.ok) {
-          throw new Error('Failed to fetch employees');
+          alert('failed to fetch data');
         }
         return res.json();
       })
